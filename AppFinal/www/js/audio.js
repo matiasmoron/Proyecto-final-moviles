@@ -8,11 +8,15 @@ function captureAudioSuccess(mediaFiles) {
 	var i, len;
 	var formatSuccess = function (mediaFile) {
 		//document.getElementById('format-data').innerHTML = "Duration: <strong>" + mediaFile.duration / 1000 + "s</strong><br/>";
+
 	};
 	for (i = 0, len = mediaFiles.length; i < len; i += 1) {
 		document.getElementById('capture-result').innerHTML = "<strong>" + (i + 1) + "files</strong>";
 		mediaFiles[i].getFormatData(formatSuccess, formatError);
 	}
+
+	var msg = 'Audio grabado exitosamente: ';
+	navigator.notification.alert(msg, null, 'Completado!');
 }
 
 function captureError(error) {

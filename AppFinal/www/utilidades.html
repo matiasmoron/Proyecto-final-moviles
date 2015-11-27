@@ -40,6 +40,20 @@
 		</div>
 	</div>
 
+
+	<!--Boton de audio-->
+
+	<div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large red">
+			<i class="large material-icons" onclick="Materialize.toast('Graba un audio con información de tu viaje', 1000)">add</i>
+		</a>
+		<ul>
+			<li>
+				<a class="btn-floating green" style="bottom: 25px; " onclick="captureAudio();"><i class=" material-icons ">mic_none</i></a> </li>
+		</ul>
+	</div>
+	<!--FIN-Boton de audio-->
+
 	<div class="container">
 
 		<div class="divider"></div>
@@ -48,18 +62,30 @@
 		<!--Brujula ----->
 		<div class="row">
 			<div class="col s12 center">
-
 				<div id="heading">Esperando...</div>
 				<canvas id="compass" width="200" height="200"></canvas>
-
 			</div>
-
 		</div>
 		<!-- Fin-Brujula ----->
+
 		<div class="divider"></div>
+		<div class="section"></div>
+		<div class="row">
+
+			<!-- ACA PUEDE IR EL LECTOR QR --->
+
+		</div>
+		<div class="divider"></div>
+		<div class="section"></div>
+		<div class="row">
+
+			<!-- ACA PUEDE IR EL podometro --->
+
+		</div>
 	</div>
 
-	<!--Audio ----->
+	<!--Audio 
+	
 	<button onclick="captureAudio();">Grabar Audio</button>
 	<div class="result-block">
 		Capture Result: <span id="capture-result"></span>
@@ -69,17 +95,13 @@
 	</div>
 	<!-- Fin-Audio ----->
 
-
 	<footer class="page-footer black">
-
 		<div class="footer-copyright">
 			<div class="container">
 				Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
 			</div>
 		</div>
 	</footer>
-
-
 	<!--  Scripts-->
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="cordova.js"></script>
