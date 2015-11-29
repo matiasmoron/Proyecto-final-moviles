@@ -10,10 +10,13 @@
 	<link href="css/icon.css" type="text/css" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link href="css/notas.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/notas.css">
 </head>
 
+
 <body>
-	<nav class="green dark-3" role="navigation">
+	<nav class="green" role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
 
 
@@ -31,7 +34,7 @@
 		<div class="container">
 			<br>
 			<br>
-			<h1 class="header center black-text">El compañero ideal para tu viaje</h1>
+			<h1 class="header center red-text">El compañero ideal para tu viaje</h1>
 			<div class="row center">
 				<h5 class="header col s12 light">Viaja, conoce, vive Yucatán</h5>
 			</div>
@@ -40,44 +43,37 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="divider"></div>
-		<div class="section">
-			<ul class="collection">
-				<li class="collection-item avatar">
-					<img src="img/yuca1.jpg" alt="" class="circle">
-					<span class="title">Chichen Itza</span>
-					<p>First Line
-						<br> Second Line
-					</p>
-					<a href="lugares/chichen.html" class="secondary-content"><i class="material-icons">send</i></a>
-				</li>
-				<li class="collection-item avatar">
-					<img src="img/yuca2.jpg" alt="" class="circle">
-					<span class="title">Ruta pucc</span>
-					<p>First Line
-						<br> Second Line
-					</p>
-					<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-				</li>
-				<li class="collection-item avatar">
-					<img src="img/yuca3.jpg" alt="" class="circle">
-					<span class="title">Title</span>
-					<p>First Line
-						<br> Second Line
-					</p>
-					<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-				</li>
-				<li class="collection-item avatar">
-					<img src="img/yuca4.jpg" alt="" class="circle">
-					<span class="title">Title</span>
-					<p>First Line
-						<br> Second Line
-					</p>
-					<a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-				</li>
-			</ul>
-		</div>
+	<div class="divider"></div>
+	<div class="section">
+
+		<main>
+			<div class="row">
+				<form id="new_note" class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input required id="note_title" type="text" class="validate">
+							<label for="note_title">Título de la nota</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea required id="note_content" rows="40" class="materialize-textarea"></textarea>
+							<label for="note_content">Contenido de la nota</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s6">
+							<button class="btn waves-effect waves-light green darken-3" type="submit">
+								guardar
+							</button>
+						</div>
+						<div class="col s6">
+							<a href="index.html" class="waves-effect waves-light btn red darken-3">cancelar</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
 	</div>
 
 	<footer class="page-footer black">
@@ -95,6 +91,8 @@
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
+	<script src="js/listarNotas.js"></script>
+	<script src="js/notaEdit.js"></script>
 
 </body>
 
