@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Desarrollo de aplicaciones móviles multiplataforma</title>
+
+	<!-- CSS  -->
+	<link href="../css/icon.css" type="text/css" rel="stylesheet">
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="../css/style.css" type="text/css" rel="stylesheet" />
+
+	<style>
+		p {
+			background-color: lightgoldenrodyellow;
+		}
+	</style>
+</head>
+
+
+<body>
+	<nav class="green dark-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
+
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="lugares.html">Que conocer</a></li>
+				<li><a href="miviaje.html">Mi viaje</a></li>
+				<li><a href="utilidades.html">Utilidades</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br>
+			<br>
+			<h1 class="header center black-text">Chichén Itzá</h1>
+			<br>
+
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="card panel" id="texto">
+			<p class>
+				<b>Chichén Itzá </b>es uno de los principales sitios arqueológicos de la península de Yucatán, en México, ubicado en el municipio de Tinum, en el estado de Yucatán. Vestigio importante y renombrado de la civilización maya, las edificaciones principales que ahí perduran corresponden a la época de la declinación de la propia cultura maya denominada por los arqueólogos como el período posclásico. La arquitectura monumental que ha llegado hasta nuestros días, que es emblemática del yacimiento, tiene una clara influencia tolteca. El dios que preside el sitio, según la mitología maya, es Kukulcán, representación maya de Quetzalcóatl, dios tomado del panteón de la cultura tolteca. Chichén Itzá fue una ciudad o un centro ceremonial, que pasó por diversas épocas constructivas e influencias de los distintos pueblos que la ocuparon y que la impulsaron desde su fundación. La zona arqueológica de Chichén Itzá fue inscrita en la lista del Patrimonio de la Humanidad por la Unesco en 1988. El 7 de julio de 2007, el Templo de Kukulcán, ubicado en Chichén Itzá, fue reconocido como una de las Las nuevas siete maravillas del mundo moderno, por una iniciativa privada sin el apoyo de la Unesco, pero con el reconocimiento de millones de votantes alrededor del mundo.
+			</p>
+
+		</div>
+		<div class="row center">
+			<a id="flow-toggle" class="btn-large waves-effect waves-light green dark-3">Agrandar texto</a>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="row">
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/1.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/2.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/3.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/4.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/5.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/6.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<div class="video-container responsive-video" controls>
+				<iframe src="http://www.youtube.com/embed/EPC-jdZfuWc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<iframe width="100%" height="400px" src="../img/yuca1.jpg" name="iframe_a"></iframe>
+			<p><a href="http://www.chichenitza.inah.gob.mx/" target="iframe_a">Más Información</a></p>
+
+		</div>
+	</div>
+	<footer class="page-footer black">
+
+		<div class="footer-copyright">
+			<div class="container">
+				Hecho por <a class="red-text text-lighten-3" href="http://materializecss.com">Isra-Peña-Moron</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<script type="text/javascript" src="../js/init.js"></script>
+
+	<script type="text/javascript">
+		// Toggle Flow Text
+		var toggleFlowTextButton = $('#flow-toggle');
+		toggleFlowTextButton.click(function () {
+			$('#texto').children('p').each(function () {
+				$(this).toggleClass('flow-text');
+			});
+		});
+	</script>
+</body>
+
+</html>

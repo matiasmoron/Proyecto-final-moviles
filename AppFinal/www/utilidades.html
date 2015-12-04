@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Desarrollo de aplicaciones móviles multiplataforma</title>
+
+	<!-- CSS  -->
+	<link href="css/icon.css" type="text/css" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onload="init();">
+	<nav class="green dark-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
+
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="lugares.html">Que conocer</a></li>
+				<li><a href="miviaje.html">Mi viaje</a></li>
+				<li><a href="utilidades.html">Utilidades</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br>
+			<br>
+			<h1 class="header center black-text">El compañero ideal para tu viaje</h1>
+			<div class="row center">
+				<h5 class="header col s12 light">Viaja, conoce, vive Yucatán</h5>
+			</div>
+			<br>
+
+		</div>
+	</div>
+
+	<button>
+		<a onclick="playAudio();">BotoonPLAY</a>
+	</button>
+	<button>
+		<a onclick="playAudio();">BotoonPausa</a>
+	</button>
+	<!--Boton de audio-->
+
+	<div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large green">
+			<i class="large material-icons" onclick="Materialize.toast('Graba un audio con información de tu viaje', 1000)">add</i>
+		</a>
+		<ul>
+			<li>
+				<a class="btn-floating green" style="bottom: 25px; " onclick="captureAudio();"><i class=" material-icons ">mic_none</i></a> </li>
+		</ul>
+	</div>
+	<!--FIN-Boton de audio-->
+
+	<div class="container">
+
+		<div class="divider"></div>
+		<div class="section"></div>
+
+		<!--Brujula ----->
+		<div class="row">
+			<div class="col s12 center">
+				<div id="heading">Esperando...</div>
+				<canvas id="compass" width="200" height="200"></canvas>
+			</div>
+		</div>
+		<!-- Fin-Brujula ----->
+
+		<div class="divider"></div>
+		<div class="section"></div>
+		<div class="row">
+
+			<!-- ACA PUEDE IR EL LECTOR QR --->
+
+		</div>
+		<div class="divider"></div>
+		<div class="section"></div>
+		<div class="row">
+
+			<!-- ACA PUEDE IR EL podometro --->
+
+		</div>
+	</div>
+
+	<!--Audio 
+	
+	<button onclick="captureAudio();">Grabar Audio</button>
+	<div class="result-block">
+		Capture Result: <span id="capture-result"></span>
+		<br/>
+		<span id="format-data"></span>
+		<br/>
+	</div>
+	<!-- Fin-Audio ----->
+
+	<footer class="page-footer black">
+		<div class="footer-copyright">
+			<div class="container">
+				Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+	<!--  Scripts-->
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/brujula.js"></script>
+	<script type="text/javascript" src="js/audio.js"></script>
+
+
+
+</body>
+
+</html>
