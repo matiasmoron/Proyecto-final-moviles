@@ -134,7 +134,9 @@ function escribir() {
 
 			saveFile(nombreArch + ".txt", contenido);
 
-			location.href = "miviaje.html";
+			alert("se guardo la nota");
+
+			//location.href = "miviaje.html";
 		}
 	}
 }
