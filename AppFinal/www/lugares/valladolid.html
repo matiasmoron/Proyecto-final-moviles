@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Desarrollo de aplicaciones móviles multiplataforma</title>
+
+	<!-- CSS  -->
+	<link href="../css/icon.css" type="text/css" rel="stylesheet">
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="../css/style.css" type="text/css" rel="stylesheet" />
+
+	<style>
+		p {
+			background-color: whitesmoke;
+		}
+	</style>
+</head>
+
+
+<body>
+	<nav class="green dark-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
+
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../lugares.html">Que conocer</a></li>
+				<li><a href="../miviaje.html">Mi viaje</a></li>
+				<li><a href="../utilidades.html">Utilidades</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br>
+			<br>
+			<h1 class="header center black-text">Valladolid</h1>
+			<br>
+
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="card panel" id="texto">
+			<p class>
+				<b>Valladolid,</b> donde sucedieron dos grandes pasajes de la historia de México: “La Guerra de Castas” en 1847 y “La Primera chispa de la Revolución Mexicana” en 1910: es conocida actualmente como “La Capital del Oriente Maya”, título merecido no sólo por la belleza arquitectónica de sus edificaciones coloniales ancestrales como el Convento de San Bernardino de Siena, el Palacio Municipal, la Iglesia de San Servacio, el Ex Telar de la Aurora, el Museo de San Roque, así como otros no menos importantes. También por su ubicación estratégica en el centro de toda la región oriente siendo la cuidad mas cosmopolita de la región, el lugar ideal para hospedarse y conocer las maravillas del mundo maya (Chichen Itzá, Ek-Balam, Coba, Tulum)y el México Colonial (Izamal, Tihosuco, Valladolid), entre otros, sin dejar de mencionar el legado cultural de sus hombres y mujeres.
+			</p>
+
+		</div>
+		<div class="row center">
+			<a id="flow-toggle" class="btn-large waves-effect waves-light green dark-3">Agrandar texto</a>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="row">
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/25.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/26.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/27.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/28.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/29.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/30.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<div class="video-container responsive-video" controls>
+				<iframe src="http://www.youtube.com/embed/EPC-jdZfuWc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<a href="http://valladolid.com.mx/" target="_blank">Más Información</a>
+
+		</div>
+	</div>
+	<footer class="page-footer black">
+
+		<div class="footer-copyright">
+			<div class="container">
+				Hecho por <a class="red-text text-lighten-3" href="http://materializecss.com">Isra-Peña-Moron</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<script type="text/javascript" src="../js/init.js"></script>
+
+	<script type="text/javascript">
+		// Toggle Flow Text
+		var toggleFlowTextButton = $('#flow-toggle');
+		toggleFlowTextButton.click(function () {
+			$('#texto').children('p').each(function () {
+				$(this).toggleClass('flow-text');
+			});
+		});
+	</script>
+</body>
+
+</html>

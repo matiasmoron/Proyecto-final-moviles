@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Desarrollo de aplicaciones móviles multiplataforma</title>
+
+	<!-- CSS  -->
+	<link href="../css/icon.css" type="text/css" rel="stylesheet">
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="../css/style.css" type="text/css" rel="stylesheet" />
+
+	<style>
+		p {
+			background-color: whitesmoke;
+		}
+	</style>
+</head>
+
+
+<body>
+	<nav class="green dark-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
+
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../lugares.html">Que conocer</a></li>
+				<li><a href="../miviaje.html">Mi viaje</a></li>
+				<li><a href="../utilidades.html">Utilidades</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br>
+			<br>
+			<h1 class="header center black-text">Loltún</h1>
+			<br>
+
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="card panel" id="texto">
+			<p class>
+				<b>Las grutas de Loltún,</b> son las más grandes y conocidas dentro del sistema de cavernas localizadas en la parte sur de Yucatán, y han sido acondicionadas para realizar con seguridad un recorrido de aproximadamente 1,000 metros de longitud en su interior por medio de iluminados senderos, donde el visitante puede conocer la historia natural y cultura del área maya del norte en un período que abarca más de 10,000 años, desde el Pleistoceno hasta la época contemporánea.
+			</p>
+
+		</div>
+		<div class="row center">
+			<a id="flow-toggle" class="btn-large waves-effect waves-light green dark-3">Agrandar texto</a>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+
+		<div class="row">
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/19.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/20.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/21.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/22.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/23.jpg">
+			</div>
+			<div class="col s6">
+				<img class="materialboxed responsive-img" src="../img/lugares/24.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<div class="video-container responsive-video" controls>
+				<iframe src="http://www.youtube.com/embed/EPC-jdZfuWc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+	<div class="section">
+		<div class="container">
+			<a href="http://www.yucatan.gob.mx/menu/?id=loltun" target="_blank">Más Información</a>
+
+		</div>
+	</div>
+	<footer class="page-footer black">
+
+		<div class="footer-copyright">
+			<div class="container">
+				Hecho por <a class="red-text text-lighten-3" href="http://materializecss.com">Isra-Peña-Moron</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<script type="text/javascript" src="../js/init.js"></script>
+
+	<script type="text/javascript">
+		// Toggle Flow Text
+		var toggleFlowTextButton = $('#flow-toggle');
+		toggleFlowTextButton.click(function () {
+			$('#texto').children('p').each(function () {
+				$(this).toggleClass('flow-text');
+			});
+		});
+	</script>
+</body>
+
+</html>
