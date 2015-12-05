@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"Capture\"><param name=\"android-package\" value=\"org.apache.cordova.mediacapture.Capture\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -73,6 +77,9 @@
             "PACKAGE_NAME": "com.IsraPenaMoron.AppFinal"
         },
         "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.IsraPenaMoron.AppFinal"
+        },
+        "cordova-plugin-device-motion": {
             "PACKAGE_NAME": "com.IsraPenaMoron.AppFinal"
         }
     },
