@@ -10,7 +10,9 @@
 	<link href="css/icon.css" type="text/css" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link href="css/notas.css" type="text/css" rel="stylesheet">
 </head>
+
 
 <body>
 	<nav class="green dark-3" role="navigation">
@@ -22,7 +24,6 @@
 				<li><a href="lugares.html">Que conocer</a></li>
 				<li><a href="miviaje.html">Mi viaje</a></li>
 				<li><a href="utilidades.html">Utilidades</a></li>
-				<li><a href="podometro.html">Podómetro</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
@@ -36,20 +37,28 @@
 			<div class="row center">
 				<h5 class="header col s12 light">Viaja, conoce, vive Yucatán</h5>
 			</div>
-			<div class="row center">
-				<a href="miviaje.html" class="btn-large waves-effect waves-light green dark-3">Inicia tu viaje</a>
-			</div>
-			<br>
 			<br>
 
 		</div>
 	</div>
+	<div class="section">
+		<main>
+			<div class="row center">
+				<p>
+					<a class="waves-effect waves-light btn-large" onclick="iniciarPodometro()"><i class="material-icons left">play_arrow</i>Iniciar</a>        
+				</p>
+				<p>
+				    <a class="waves-effect waves-light btn-large" onclick="detenerPodometro()"><i class="material-icons left">pause</i>Detener</a>        
+				</p>
+				    En tu viaje haz caminado:
+				    <div id="podometro"></div>
+			</div>
+		</main>
 
-	<!--<div class="container">
-		<iframe src="https://www.google.com/maps/d/viewer?mid=zYUt4uU9puUY.kFgiLdqeEqNE" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-		</iframe>
-	</div>
-	-->
+	<footer>
+
+	</footer>
+
 
 	<footer class="page-footer black">
 
@@ -66,6 +75,7 @@
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/podometro.js"></script>
 
 </body>
 
