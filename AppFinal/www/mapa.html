@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Working Google Maps</title>
+
+        
+    <!-- el index1 es el que uso en este html !!!-->
+
+    </head>
+    <body >
+        <div id="mapa_ruta" style="width: 710px; height: 300px; border: 4px solid #FF6600;"></div>
+
+        <div id="direcciones" style="width: 710px border: 4px solid #FF6600;"></div> 
+
+        <form action="#" onsubmit="setDirections(this.from.value, this.to.value, this.locale.value); return false" name="form">
+
+            Origen: <input type="text" size="25" id="fromAddress" name="from"/><br>
+
+            Destino: <input name="to" type="text" id="toAddress" size="25"/><br>
+
+            Idioma: <select id="locale" name="locale">
+            <option value="es" selected>Castellano</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="ja">Japanese</option>
+            </select>
+
+            <input type="submit" name="Submit" value="Calcular Ruta"/>
+
+        </form> 
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/mapa.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdbqhC5hHBbFJGm-x-GXB5xrmB-BsYHxU"> </script>
+    </body>
+</html>
