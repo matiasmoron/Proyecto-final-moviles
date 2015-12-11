@@ -16,27 +16,27 @@
 
 
 <body>
-	<nav class="green" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
+	<nav class="green dark-3" role="navigation">
+			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YucaTurist</a>
 
 
-			<ul id="nav-mobile" class="side-nav">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="lugares.html">Que conocer</a></li>
-				<li><a href="miviaje.html">Mi viaje</a></li>
-				<li><a href="utilidades.html">Utilidades</a></li>
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-		</div>
-	</nav>
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="lugares.html">Que conocer</a></li>
+					<li><a href="miviaje.html">Mi viaje</a></li>
+					<li><a href="utilidades.html">Utilidades</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
 
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
 			<br>
 			<br>
-			<h1 class="header center red-text">El compañero ideal para tu viaje</h1>
+			<h1 class="header center red-text" id="titulo">El compañero ideal para tu viaje</h1>
 			<div class="row center">
-				<h5 class="header col s12 light">Viaja, conoce, vive Yucatán</h5>
+				<h5 class="header col s12 light" id="subtitulo">Viaja, conoce, vive Yucatán</h5>
 			</div>
 			<br>
 
@@ -52,23 +52,23 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<input required id="note_title" type="text" class="validate">
-							<label for="note_title">Título de la nota</label>
+							<label for="note_title" id="note-title">Título de la nota</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s12">
 							<textarea required id="note_content" rows="40" class="materialize-textarea"></textarea>
-							<label for="note_content">Contenido de la nota</label>
+							<label for="note_content" id="note-content">Contenido de la nota</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col s6">
-							<button class="btn waves-effect waves-light green darken-3" type="submit">
+							<button class="btn waves-effect waves-light green darken-3" type="submit" id="boton-guardar">
 								guardar
 							</button>
 						</div>
 						<div class="col s6">
-							<a href="index.html" class="waves-effect waves-light btn red darken-3">cancelar</a>
+							<a href="index.html" class="waves-effect waves-light btn red darken-3" id="boton-cancelar">cancelar</a>
 						</div>
 					</div>
 				</form>
@@ -93,6 +93,7 @@
 	<script type="text/javascript" src="js/init.js"></script>
 	<script src="js/listarNotas.js"></script>
 	<script src="js/notaEdit.js"></script>
+	<script src="js/notas.js"></script>
 
 </body>
 

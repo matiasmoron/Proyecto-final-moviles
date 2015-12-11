@@ -607,6 +607,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.IsraPenaMoron.AppFinal"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.IsraPenaMoron.AppFinal"
         }
     },
     "dependent_plugins": {

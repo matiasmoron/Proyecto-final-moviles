@@ -28,12 +28,14 @@ function iniciarSistemaArchivos() {
 //
  
 function onPhotoDataSuccess(imageURI) {
+	alert(imageURI);
 	 element =imageURI.split('/0/');
 	 rutaImagen = element[1];
 	 element = imageURI.split('/');
+
 	 nombreDeArchivo = element[7];
 	 setTimeout(function(){
-	  rename(rutaImagen,"notas/bebe.jpg");
+	  rename(rutaImagen,"Notas/bebe.jpg");
 	}, 50);
 	
 }
